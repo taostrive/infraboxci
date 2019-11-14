@@ -15,7 +15,7 @@
                 "type": "docker-registry",
                 "host": "docker.pkg.github.com/taostrive",
                 "repository": "infraboxci",
-		"username": { "$secret": "GITHUB_USERNAME" },
+		"username": "liutaostrive@gmail.com",
 		"password": { "$secret": "GITHUB_TOKEN" }
             }]
         }, {
