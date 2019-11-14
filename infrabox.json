@@ -14,12 +14,12 @@
             "deployments": [{
                 "type": "docker-registry",
                 "host": "docker.pkg.github.com/taostrive",
-                "repository": "infraboxci",
+                "repository": "infraboxci/build-image",
 		"username": "liutaostrive@gmail.com",
 		"password": { "$secret": "GITHUB_TOKEN" }
             }]
         }, {
-            "image": "docker.pkg.github.com/taostrive/infraboxci:build_$INFRABOX_BUILD_NUMBER",
+            "image": "docker.pkg.github.com/taostrive/infraboxci/build-image:build_$INFRABOX_BUILD_NUMBER",
             "name": "docker-image-run",
             "resources": {
                 "limits": {
