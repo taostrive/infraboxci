@@ -1,2 +1,2 @@
 ARG INFRABOX_BUILD_NUMBER
-FROM 192.168.1.31:5000/my-image:build_$INFRABOX_BUILD_NUMBER
+FROM docker.pkg.github.com/taostrive/infraboxci:build_$INFRABOX_BUILD_NUMBER
